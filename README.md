@@ -22,11 +22,11 @@ The game is set in a village occupied by villagers and villains. As you enter it
 * Hash map structure to manage music selection in the Music Manager blueprint
   * Used to avoid multiple booleans checked every frame
   * Used to facilitate the search of each music Value with a Key
-* Arrays, data tables and enums to manage the spells in the SkillBook blueprint
-  * Used to make a data-oriented system to allow level and narrative designers to update content dynamically based on enum-driven IDs
+* Arrays, data tables and descriptive enums to manage the spells in the SkillBook blueprint
+  * Used to make a data-oriented system to allow level and narrative designers to update content dynamically based on enums used as Keys
 * Bubble sort algorithm in the SkillBook blueprint
-  * Used to sort the spells appearing in each SkillBook in the order in which they appear in the Loadout widget
-* Graph structure to manage the game endings in the GameEndingsManager blueprint (each game ending can be triggered by one or more missions)
+  * Used to sort the spells appearing in each in-game Book in the order in which they appear in the Loadout widget
+* Graph-based structure to manage the game endings in the GameEndingsManager blueprint (each game ending can be triggered by one or more missions)
   * Used to store completed missions and to check if an ending is unlocked based on the requirements of the completed missions
   * Used 2 Maps: one to store the completed missions, and another one to store the game endings, also acting as a graph node, with a boolean "Unlocked"
 
